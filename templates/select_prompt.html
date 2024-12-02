@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Prompt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatSelection.css') }}">
+</head>
+<body>
+    <div class="prompt-container">
+        <h2 class="title">Select a Prompt</h2>
+        <form id="prompt-form" class="input-form" action="/set_prompt" method="POST">
+            <button type="submit" class="prompt-button" name="prompt" value="project_planning">Project Planning and Scheduling</button>
+            <button type="submit" class="prompt-button" name="prompt" value="math_topics">Topics in Mathematics</button>
+            <button type="submit" class="prompt-button" name="prompt" value="other">Other</button>
+        </form>
+    </div>
+</body>
+</html>

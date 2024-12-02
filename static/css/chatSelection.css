@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.prompt-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prompt-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prompt-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbotInterface.css') }}">
+    <script src="{{ url_for('static', filename='javascript/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h2 style="text-align: center;">MathBot</h2>
+        <div id="chat-box" class="chat-box"></div>
+        <form id="chat-form" class="input-form">
+            <input name="user-input" type="text" id="user-input" placeholder="Type your message here..." required>
+            <button type="submit">Send</button>
+            <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+        </form>
+        <button type="submit" id="summarize-button" class="summarize-button">Summarize Session</button>
+        <div id="summary-container">
+            <p id="summary-text" style="font-style: italic; font-size: 0.9em;">Don't forget to summarize the session.</p>
+        </div>        
+    </div>
+</body>
+</html>
